@@ -76,3 +76,13 @@ The "Unspecified" Revenue Signal: The "Unspecified" product category holds an Av
 The Revenue Leakage Gap: My forensic audit identified 463 records (representing a significant fiscal percentage) where Quantity and Price Per Unit were logged, but the Total Sales remained unrecorded. This represents direct revenue leakage—value that was created in the kitchen and served to a customer but was effectively "lost" in the final financial reconciliation due to a system sync failure.
 
 Channel & Payment Anonymity: A disproportionately high volume of transactions is being logged with "Unspecified" Location and Payment Method data. This suggests that during peak "rush" hours, staff are likely bypassing these mandatory fields to maintain service speed. While this keeps the line moving, it strips the business of the intelligence needed to decide whether to invest in more In-store seating or more Takeaway kiosks.
+
+Seasonal Velocity & Revenue Cycles
+
+By mapping the 8,997 transactions across a fiscal timeline, I identified a distinct "seasonal heartbeat" for the cafe. Understanding these cycles allows for smarter resource allocation and inventory management.
+
+Consistent Daily Performance: The business demonstrates remarkable stability on a day-to-day basis. Revenue concentration and transaction volume remain consistent across the week, suggesting a loyal, habit-based customer base rather than one driven by erratic weekend surges.
+
+The "Peak Performance" Windows: June, April, and October emerge as the strategic high-points for the brand, with each month contributing 12.5% to the total annual revenue. During these peak windows, our "Wellness Heroes" (Salads, Sandwiches, and Smoothies) see their highest velocity, confirming that our core product-market fit is strongest during these transition seasons.
+
+Troughs and Contraction Periods: February and May represent the lowest engagement periods, with revenue concentration dipping to just 3.24%. These "trough" months identify a critical business opportunity: the need for seasonal promotions or "limited-time offers" to bridge the gap and maintain cash flow during off-peak times.
