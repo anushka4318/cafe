@@ -109,3 +109,15 @@ Utilize Cookies (a high-volume, high-affinity item) as a strategic incentive. By
 The "Peak Performance" Windows: June, April, and October emerge as the strategic high-points for the brand, with each month contributing 12.5% to the total annual revenue. During these peak windows, our "Wellness Heroes" (Salads, Sandwiches, and Smoothies) see their highest velocity, confirming that our core product-market fit is strongest during these transition seasons.
 
 Troughs and Contraction Periods: February and May represent the lowest engagement periods, with revenue concentration dipping to just 3.24%. These "trough" months identify a critical business opportunity: the need for seasonal promotions or "limited-time offers" to bridge the gap and maintain cash flow during off-peak times.
+
+
+Strategic Adjustments & System Guardrails
+In any real-world operation, data is rarely perfect. To ensure the integrity of the business simulation and provide a reliable roadmap for growth, I applied specific logical guardrails to account for system inconsistencies:
+
+Financial Reconciliation (Revenue Recovery): For the 463 records where a transaction occurred but no "Total Sales" was recorded, I manually calculated the values using the Quantity × Price Per Unit logic. This adjustment was essential to capture the true $80,347.50 revenue footprint of the business.
+
+Contextual Imputation (Seasonal Continuity): Where specific monthly data points were missing or inconsistent, I utilized historical performance averages from adjacent peak months (June and October) to maintain a continuous trend analysis, ensuring the "Seasonal Velocity" report remained accurate.
+
+Data Integrity Filtering (The 3% Rule): Approximately 3% of the date and quantity entries contained non-sensical or "corrupted" values (e.g., negative quantities or future dates). To prevent these from skewing our Average Order Value (AOV), these outliers were excluded to ensure the findings represent realistic customer behavior.
+
+Attribute Standardization: "Not Noted" or "Unknown" entries in the Location and Payment columns were treated as a distinct category rather than deleted. This allows the business to measure the "Visibility Gap" as an operational metric rather than hiding it as a data error.
