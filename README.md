@@ -44,7 +44,10 @@ This is the menu table along with its price per unit value adjacent to the item 
 
 <img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/9f2f0255-b4c1-44c2-93b9-0d39a73eeb21" /> 
 
-INSIGHTS DEEP DIVE
+Insight Deep Dive
+Total Market Capture: The business generated a total audited revenue of $80,347.50. This figure represents the "reclaimed" total after accounting for the 463 missing transaction entries.
 
+The 51% Anchor: Three core categories—Salads, Sandwiches, and Smoothies—generate over half of the total revenue. These are our "Wellness Heroes," defining the brand’s identity and providing the most reliable cash flow.
+Revenue Resilience: Revenue is not dependent on a single "hit" product. Instead, it is distributed across several categories, protecting the business from sudden shifts in consumer trends or supply chain costs
 
 
