@@ -66,3 +66,13 @@ Operational Capture Friction: The fact that "Unspecified" entries tie with our p
 
 Strategic Channel Resilience: The near-equal distribution between In-store and Takeaway orders provides the business with revenue resilience. The brand is not overly dependent on one single channel, allowing for flexibility in how physical space is allocated or how marketing is targeted.
 
+
+Operational Integrity & Value Leakage
+
+My investigation into the "Digital Infrastructure" of the business revealed significant friction points where the pace of daily operations has outpaced the system’s ability to capture data. I have categorized these into three specific Operational Blind Spots:
+
+The "Unspecified" Revenue Signal: The "Unspecified" product category holds an Average Order Value (AOV) of $10, ranking it as the 4th highest revenue contributor. This is a major operational red flag; it indicates that a high-value portion of our sales is being pushed through the system without proper categorization, making it impossible to manage inventory or forecast demand for these "ghost" products.
+
+The Revenue Leakage Gap: My forensic audit identified 463 records (representing a significant fiscal percentage) where Quantity and Price Per Unit were logged, but the Total Sales remained unrecorded. This represents direct revenue leakage—value that was created in the kitchen and served to a customer but was effectively "lost" in the final financial reconciliation due to a system sync failure.
+
+Channel & Payment Anonymity: A disproportionately high volume of transactions is being logged with "Unspecified" Location and Payment Method data. This suggests that during peak "rush" hours, staff are likely bypassing these mandatory fields to maintain service speed. While this keeps the line moving, it strips the business of the intelligence needed to decide whether to invest in more In-store seating or more Takeaway kiosks.
