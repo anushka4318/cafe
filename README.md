@@ -16,21 +16,18 @@ Instead of “fixing” the dataset to make it perfect, I deliberately preserved
 The goal of this project was to demonstrate how structured analysis can transform messy data into clear insights and actionable strategy.
 
 Strategic Focus Areas
+1. Product & Revenue Performance
 
-My analysis and recommendations focus on four key areas that reflect both business performance and operational health:
+Analyzing which items drive the most revenue and volume, how much each contributes to overall revenue, and whether the business relies too heavily on a small set of products.
 
-Category 1: Revenue Capture & Financial Accuracy
+2. Customer & Transaction Behavior
 
-Reviewed transactions with missing or inconsistent values to identify potential revenue leakage, with specific focus on the 463 transactions where sales were not fully recorded.
+Understanding how payment methods impact transaction patterns and order values, and how Average Order Value (AOV) varies across payment methods and locations.
 
-Category 2: Operational Visibility & Channel Performance
+3. Channel & Operational Performance
 
-Analyzed the 40% gap in location data to better understand the true distribution of demand between In-store and Takeaway orders.
+Evaluating how In-store vs Takeaway affects product performance, identifying top-performing days of the week, and highlighting operational gaps such as pricing and total mismatches.
 
-Category 3: Product Portfolio Performance
+4. Time-Based Trends & Growth
 
-Evaluated product performance to identify the core items (such as salads, smoothies, and sandwiches) that contribute the largest share of revenue, supporting more informed menu and positioning decisions.
-
-Category 4: Time-Based Growth & Seasonality
-
-Analyzed sales trends across months and days to identify peak periods and understand how higher transaction volumes affect both performance and data quality.
+Examining monthly sales trends and identifying peak periods and best-performing products to support planning and forecasting.
