@@ -32,14 +32,15 @@ Evaluating how In-store vs Takeaway affects product performance, identifying top
 
 Examining monthly sales trends and identifying peak periods and best-performing products to support planning and forecasting.
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+An interactive Excel dashboard used to report and explore sales trends can be found here [link].
 
 Data Structure and Initial Checks
 
+The main database structure as seen below consists of 1 main table with a total row count of 10,000 records.
+
 <img width="860" height="478" alt="dataset structure" src="https://github.com/user-attachments/assets/8dcdf150-7a57-4f5a-a588-eff7aa9efa3c" />
 
-
-
+This is the menu table along with its price per unit value adjacent to the item name.
 
 <img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/9f2f0255-b4c1-44c2-93b9-0d39a73eeb21" />
 
