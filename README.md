@@ -56,5 +56,13 @@ The "Product Champion" Analysis: Salads emerge as the undisputed business winner
 Operational Visibility Warning: The "Unspecified Category" currently holds the 4th position in total performance with an AOV of $10. This identifies a significant operational failure in transaction logging; a major portion of business value is being captured without being properly attributed to a specific product line.
 
 
+Customer & Transactional Logic:
 
+The "Blind Spot" in Customer Intelligence: A significant 31% of the total customer base is currently categorized as "Unspecified." This represents a major gap in the business's ability to track loyalty or behavior, effectively leaving nearly a third of our audience as an invisible demographic.
+
+Balanced Channel Engagement: Setting aside the unspecified data, the business shows a remarkably even split between In-store (30.58%) and Takeaway (29.64%) orders. This parity suggests the brand is equally successful as a destination cafe and a convenience-led grab-and-go model.
+
+Operational Capture Friction: The fact that "Unspecified" entries tie with our primary revenue channels is a clear indicator of operational friction. It suggests that during peak transaction periods, the process for logging customer or order types is being bypassed in favor of service speed.
+
+Strategic Channel Resilience: The near-equal distribution between In-store and Takeaway orders provides the business with revenue resilience. The brand is not overly dependent on one single channel, allowing for flexibility in how physical space is allocated or how marketing is targeted.
 
