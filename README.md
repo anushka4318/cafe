@@ -31,3 +31,11 @@ Evaluating how In-store vs Takeaway affects product performance, identifying top
 4. Time-Based Trends & Growth
 
 Examining monthly sales trends and identifying peak periods and best-performing products to support planning and forecasting.
+
+An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+
+Data Structure and Initial Checks
+
+<img width="860" height="478" alt="dataset structure" src="https://github.com/user-attachments/assets/8dcdf150-7a57-4f5a-a588-eff7aa9efa3c" />
+
+
