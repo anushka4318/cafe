@@ -1,4 +1,4 @@
-# cafe
+# Cafe Data Analysis and Business Strategy
 
 Project Vision: Connecting Business Reality with Data
 
