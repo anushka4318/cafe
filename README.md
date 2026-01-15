@@ -47,7 +47,14 @@ This is the menu table along with its price per unit value adjacent to the item 
 Insight Deep Dive
 Total Market Capture: The business generated a total audited revenue of $80,347.50. This figure represents the "reclaimed" total after accounting for the 463 missing transaction entries.
 
-The 51% Anchor: Three core categories—Salads, Sandwiches, and Smoothies—generate over half of the total revenue. These are our "Wellness Heroes," defining the brand’s identity and providing the most reliable cash flow.
-Revenue Resilience: Revenue is not dependent on a single "hit" product. Instead, it is distributed across several categories, protecting the business from sudden shifts in consumer trends or supply chain costs
+The "Wellness Hero" Revenue Anchor: A critical 51% of total revenue is concentrated in just three core categories: Salads, Sandwiches, and Smoothies. These items serve as the brand's financial foundation, driven primarily by their premium price points and strong market fit.
+
+Volume vs. Value Dynamics: From a pure volume perspective, the top three movers are Coffee, Salads, and Cookies. While Coffee and Cookies drive high foot traffic and frequency, their lower price points mean they act as "entry products" compared to the high-value revenue drivers.
+
+The "Product Champion" Analysis: Salads emerge as the undisputed business winner, topping both the revenue and volume charts. With a high Average Order Value (AOV) of $15, this category represents the ideal balance of consumer demand and high-margin contribution.
+
+Operational Visibility Warning: The "Unspecified Category" currently holds the 4th position in total performance with an AOV of $10. This identifies a significant operational failure in transaction logging; a major portion of business value is being captured without being properly attributed to a specific product line.
+
+
 
 
