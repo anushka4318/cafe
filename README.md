@@ -1,4 +1,4 @@
-# Cafe Data Analysis and Business Strategy (Reformatted)
+# Cafe Data Analysis and Business Strategy
 
 ## Project Background
 
