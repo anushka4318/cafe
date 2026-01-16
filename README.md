@@ -1,145 +1,136 @@
-Cafe Data Analysis and Business Strategy
-Project Vision: Connecting Business Reality with Data
+# Cafe Data Analysis and Business Strategy (Reformatted)
 
-Cafes have always interested me; not just as social spaces, but as fast-moving businesses where small operational gaps can quietly impact revenue.
-During peak hours, orders move quickly, staff multitask, and documentation can easily fall behind.
+## Project Background
 
-This led me to a fundamental question:
+Cafes have always interested me not only as social spaces but as fast-moving businesses where small operational gaps can quietly impact revenue. This project is based on a dataset sourced from Kaggle and adapted to simulate a realistic cafe business environment. I approached this project from the perspective of a data analyst working within the company, treating the dataset as if it were real operational data.
 
-Is the business operating at its full potential, or is the 'busy-ness' of daily operations masking opportunities for growth and refinement?
+Instead of "fixing" the dataset to make it perfect, I intentionally preserved common real-world issues such as missing totals, incomplete fields, and inconsistent entries. These represent the exact points where businesses often lose visibility, control, and revenue. The purpose of this project is to demonstrate how structured analysis can transform messy, imperfect data into clear insights and actionable business strategy.
 
-This project uses a dataset sourced from Kaggle and adapted to simulate a realistic cafe business environment.
-I approached it not as a data exercise, but as a business diagnosis, treating the dataset like real operational data from a functioning company.
+Insights and recommendations are provided on the following key areas:
 
-Instead of “fixing” the dataset to make it perfect, I deliberately preserved common real-world issues such as missing totals, incomplete fields, and inconsistent entries. These issues often represent the exact points where businesses lose visibility, control, and revenue.
+* Category 1: Product & Revenue Performance
+* Category 2: Customer & Transaction Behavior
+* Category 3: Channel & Operational Performance
+* Category 4: Time-Based Trends & Growth
 
-The goal of this project was to demonstrate how structured analysis can transform messy data into clear insights and actionable strategy.
+The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
-Strategic Focus Areas
-1. Product & Revenue Performance
+Targeted SQL queries regarding various business questions can be found here [link].
 
-Analyzing which items drive the most revenue and volume, how much each contributes to overall revenue, and whether the business relies too heavily on a small set of products.
+An interactive Excel dashboard used to report and explore sales trends can be found here [link].
 
-2. Customer & Transaction Behavior
+---
 
-Understanding how payment methods impact transaction patterns and order values, and how Average Order Value (AOV) varies across payment methods and locations.
+## Data Structure & Initial Checks
 
-3. Channel & Operational Performance
+The company’s main database structure consists of 1 primary table with a total row count of 10,000 records. This table represents transaction-level data for the cafe business.
 
-Evaluating how In-store vs Takeaway affects product performance, identifying top-performing days of the week, and highlighting operational gaps such as pricing and total mismatches.
+Table 1 (Main Transactions Table):
+Contains order-level details such as items sold, quantity, price per unit, total sales, category, location (In-store/Takeaway), payment method, and date fields used throughout the analysis.
 
-4. Time-Based Trends & Growth
+Supporting Structure:
+A separate menu reference is used, containing item names along with their price per unit values to validate pricing consistency across transactions.
 
-Examining monthly sales trends and identifying peak periods and best-performing products to support planning and forecasting.
+[Entity Relationship Diagram here]
 
-Dashboard
+---
 
-An interactive Excel dashboard used to report and explore sales trends can be found here:
-[link]
+## Executive Summary
 
-Data Structure and Initial Checks
+### Overview of Findings
 
-The main database structure as seen below consists of 1 main table with a total row count of 10,000 records.
+If a stakeholder were to take away three key insights from this project, they would be:
 
-<img width="860" height="478" alt="dataset structure" src="https://github.com/user-attachments/assets/8dcdf150-7a57-4f5a-a588-eff7aa9efa3c" />
+1. A significant portion of revenue and customer data is being lost due to poor operational data capture (e.g., 463 missing transaction totals and large volumes of "Unspecified" entries).
+2. The business’s financial performance is highly driven by a small group of high-performing products (Salads, Sandwiches, and Smoothies contribute 51% of total revenue).
+3. The cafe demonstrates strong operational resilience across channels (In-store vs Takeaway) and consistent performance across days, but clear seasonal peaks and troughs require strategic planning.
 
-This is the menu table along with its price per unit value adjacent to the item name.
+[Visualization, including a graph of overall trends or snapshot of a dashboard]
 
-<img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/9f2f0255-b4c1-44c2-93b9-0d39a73eeb21" />
+---
 
+## Insights Deep Dive
 
-Insight Deep Dive
+### Category 1: Product & Revenue Performance
 
-Total Market Capture:
-The business generated a total audited revenue of $80,347.50. This figure represents the "reclaimed" total after accounting for the 463 missing transaction entries.
+Main insight 1: The business generated a total audited revenue of $80,347.50 after recovering value from 463 missing transaction totals. This represents the true financial footprint of the business once data gaps were addressed.
 
-The "Wellness Hero" Revenue Anchor:
-A critical 51% of total revenue is concentrated in just three core categories: Salads, Sandwiches, and Smoothies. These items serve as the brand's financial foundation, driven primarily by their premium price points and strong market fit.
+Main insight 2: 51% of total revenue is concentrated in three categories: Salads, Sandwiches, and Smoothies. These products form the brand’s financial foundation due to strong demand and premium pricing.
 
-Volume vs. Value Dynamics:
-From a pure volume perspective, the top three movers are Coffee, Salads, and Cookies. While Coffee and Cookies drive high foot traffic and frequency, their lower price points mean they act as "entry products" compared to the high-value revenue drivers.
+Main insight 3: From a volume perspective, Coffee, Salads, and Cookies are the top movers. Coffee and Cookies drive high footfall, but their lower price points position them as entry products rather than core revenue drivers.
 
-The "Product Champion" Analysis:
-Salads emerge as the undisputed business winner, topping both the revenue and volume charts. With a high Average Order Value (AOV) of $15, this category represents the ideal balance of consumer demand and high-margin contribution.
+Main insight 4: Salads emerge as the strongest overall product, ranking highest in both revenue and volume, with an Average Order Value (AOV) of $15. This reflects strong product-market fit and high-margin contribution.
 
-Operational Visibility Warning:
-The "Unspecified Category" currently holds the 4th position in total performance with an AOV of $10. This identifies a significant operational failure in transaction logging; a major portion of business value is being captured without being properly attributed to a specific product line.
+[Visualization specific to category 1]
 
-Customer & Transactional Logic
+---
 
-The "Blind Spot" in Customer Intelligence:
-A significant 31% of the total customer base is currently categorized as "Unspecified." This represents a major gap in the business's ability to track loyalty or behavior, effectively leaving nearly a third of the audience as an invisible demographic.
+### Category 2: Customer & Transaction Behavior
 
-Balanced Channel Engagement:
-Setting aside the unspecified data, the business shows a remarkably even split between In-store (30.58%) and Takeaway (29.64%) orders. This parity suggests the brand is equally successful as a destination cafe and a convenience-led grab-and-go model.
+Main insight 1: 31% of customers are labeled as "Unspecified," which represents a major blind spot in customer intelligence and prevents effective tracking of loyalty and behavior.
 
-Operational Capture Friction:
-The fact that "Unspecified" entries tie with primary revenue channels is a clear indicator of operational friction. It suggests that during peak transaction periods, the process for logging customer or order types is being bypassed in favor of service speed.
+Main insight 2: Excluding unspecified data, In-store (30.58%) and Takeaway (29.64%) orders are almost evenly split. This shows that the cafe performs equally well as a destination space and as a convenience-led option.
 
-Strategic Channel Resilience:
-The near-equal distribution between In-store and Takeaway orders provides the business with revenue resilience. The brand is not overly dependent on one single channel, allowing for flexibility in how physical space is allocated or how marketing is targeted.
+Main insight 3: The high volume of unspecified customer and transaction entries suggests that during peak periods, data capture is being deprioritized in favor of speed of service.
 
-Operational Integrity & Value Leakage
+Main insight 4: The balanced split between channels provides strategic resilience, meaning the business is not overly dependent on a single revenue stream.
 
-My investigation into the "Digital Infrastructure" of the business revealed significant friction points where the pace of daily operations has outpaced the system’s ability to capture data. These are categorized into three specific Operational Blind Spots:
+[Visualization specific to category 2]
 
-The "Unspecified" Revenue Signal:
-The "Unspecified" product category holds an AOV of $10, ranking it as the 4th highest revenue contributor. This is a major operational red flag; it indicates that a high-value portion of our sales is being pushed through the system without proper categorization, making it impossible to manage inventory or forecast demand for these "ghost" products.
+---
 
-The Revenue Leakage Gap:
-My forensic audit identified 463 records (representing a significant fiscal percentage) where Quantity and Price Per Unit were logged, but the Total Sales remained unrecorded. This represents direct revenue leakage—value that was created in the kitchen and served to a customer but was effectively "lost" in the final financial reconciliation due to a system sync failure.
+### Category 3: Channel & Operational Performance
 
-Channel & Payment Anonymity:
-A disproportionately high volume of transactions is being logged with "Unspecified" Location and Payment Method data. This suggests that during peak "rush" hours, staff are likely bypassing these mandatory fields to maintain service speed. While this keeps the line moving, it strips the business of the intelligence needed to decide whether to invest in more In-store seating or more Takeaway kiosks.
+Main insight 1: The "Unspecified" product category ranks 4th in overall performance with an AOV of $10. This is a critical operational red flag, as high-value sales are occurring without being correctly attributed.
 
-Seasonal Velocity & Revenue Cycles
+Main insight 2: 463 transactions contained quantity and price but were missing total sales values. This represents direct revenue leakage caused by system or process failure during transaction logging.
 
-By mapping the 8,997 transactions across a fiscal timeline, I identified a distinct "seasonal heartbeat" for the cafe. Understanding these cycles allows for smarter resource allocation and inventory management.
+Main insight 3: A large number of transactions are missing location and payment method details, indicating that staff are likely bypassing mandatory fields during busy periods.
 
-Consistent Daily Performance:
-The business demonstrates remarkable stability on a day-to-day basis. Revenue concentration and transaction volume remain consistent across the week, suggesting a loyal, habit-based customer base rather than one driven by erratic weekend surges.
+Main insight 4: These operational blind spots do not just affect reporting quality; they directly limit the business’s ability to make informed decisions around staffing, layout, marketing, and investment.
 
-Strategic Recommendations: The Growth Roadmap
+[Visualization specific to category 3]
 
-Here are your five recommendations, polished to reflect a "Business Architect" persona:
+---
 
-Operational Integrity & Data Capture Training
-Implement a targeted staff training program focused on "Peak-Hour Data Integrity." By simplifying the POS interface for high-velocity items and mandating Category/Location selection, we can eliminate the $10 AOV "Unspecified" gap and the 463 unrecorded transactions, ensuring every dollar of value is accounted for in the P&L.
+### Category 4: Time-Based Trends & Growth
 
-Seasonal Revenue Leveling (The "Trough" Strategy)
-To bridge the revenue dip in February and May, we will launch seasonal-specific campaigns:
+Main insight 1: Revenue and transaction volume remain relatively consistent across days of the week, suggesting a loyal, habit-driven customer base rather than heavy weekend dependency.
 
-February (Winter Warmth): Introduce high-margin hot beverage combos paired with a "Home-Comfort" takeaway discount to drive volume during cold months.
+Main insight 2: June, April, and October each contribute approximately 12.5% of total annual revenue, making them peak performance windows for the business.
 
-May (Summer Preview): Launch a "Summer Shake & Smoothie" series, utilizing healthy, vibrant combos to spark interest before the peak June season.
+Main insight 3: February and May are clear trough periods, with revenue contribution dipping to around 3.24%, highlighting the need for seasonal intervention.
 
-High-Performance Menu Diversification
-Since Salads are the undisputed "Brand Winner" in both volume and AOV ($15), the business should diversify this category. Introducing 1–2 seasonal salad variations leverages existing customer affinity and minimizes the risk of "menu fatigue" for our most loyal demographic.
+Main insight 4: Product performance during peak months further reinforces that Salads, Sandwiches, and Smoothies have the strongest product-market fit during key seasonal transitions.
 
-Strategic "Hero" Bundling
-Maximize the 80/20 rule by creating an "Elite Wellness Combo" that bundles our three top performers (Salad, Sandwich, and Smoothie) at a slightly lower price point than individual purchases. This simplifies the decision-making process for the customer and guarantees a high-value transaction for the business.
+[Visualization specific to category 4]
 
-High-Volume Incentive Engineering
-Utilize Cookies (a high-volume, high-affinity item) as a strategic incentive. By offering a "Free Cookie with any Salad & Drink combo," we can leverage the low cost of the cookie to drive sales of our high-margin "Wellness Heroes," effectively increasing the total transaction value through psychological "reward" marketing.
+---
 
-The "Peak Performance" Windows:
-June, April, and October emerge as the strategic high-points for the brand, with each month contributing 12.5% to the total annual revenue. During these peak windows, our "Wellness Heroes" (Salads, Sandwiches, and Smoothies) see their highest velocity, confirming that our core product-market fit is strongest during these transition seasons.
+## Recommendations
 
-Troughs and Contraction Periods:
-February and May represent the lowest engagement periods, with revenue concentration dipping to just 3.24%. These "trough" months identify a critical business opportunity: the need for seasonal promotions or "limited-time offers" to bridge the gap and maintain cash flow during off-peak times.
+Based on the insights and findings above, we would recommend the leadership and operations team to consider the following:
 
-Strategic Adjustments & System Guardrails
+* A significant amount of value is lost due to incomplete transaction logging. Implement targeted staff training and simplify POS workflows to enforce mandatory category, location, and total capture during peak hours.
 
-In any real-world operation, data is rarely perfect. To ensure the integrity of the business simulation and provide a reliable roadmap for growth, I applied specific logical guardrails to account for system inconsistencies:
+* Revenue drops sharply in February and May. Introduce seasonal campaigns such as winter beverage bundles in February and summer-focused smoothie promotions in May to stabilize cash flow.
 
-Financial Reconciliation (Revenue Recovery):
-For the 463 records where a transaction occurred but no "Total Sales" was recorded, I manually calculated the values using the Quantity × Price Per Unit logic. This adjustment was essential to capture the true $80,347.50 revenue footprint of the business.
+* Salads are the strongest product across both revenue and demand. Introduce 1–2 seasonal salad variations to deepen engagement with existing loyal customers and prevent menu fatigue.
 
-Contextual Imputation (Seasonal Continuity):
-Where specific monthly data points were missing or inconsistent, I utilized historical performance averages from adjacent peak months (June and October) to maintain a continuous trend analysis, ensuring the "Seasonal Velocity" report remained accurate.
+* The top three revenue drivers (Salads, Sandwiches, Smoothies) can be strategically bundled. Introduce a high-value combo offering to increase average transaction size while simplifying customer decision-making.
 
-Data Integrity Filtering (The 3% Rule):
-Approximately 3% of the date and quantity entries contained nonsensical or "corrupted" values (e.g., negative quantities or future dates). To prevent these from skewing our Average Order Value (AOV), these outliers were excluded to ensure the findings represent realistic customer behavior.
+* Cookies are a high-volume, low-cost item. Use them as an incentive (e.g., free cookie with premium combo purchases) to psychologically boost perceived value while driving sales of high-margin items.
 
-Attribute Standardization:
-"Not Noted" or "Unknown" entries in the Location and Payment columns were treated as a distinct category rather than deleted. This allows the business to measure the "Visibility Gap" as an operational metric rather than hiding it as a data error.
+---
+
+## Assumptions and Caveats
+
+Throughout the analysis, multiple assumptions were made to manage challenges with the data. These are documented below:
+
+* Assumption 1: For the 463 records where Total Sales was missing but Quantity and Price Per Unit were available, Total Sales was calculated manually using Quantity × Price Per Unit to recover true revenue.
+
+* Assumption 2: Where monthly data points were inconsistent or missing, historical averages from adjacent peak months (June and October) were used to maintain continuity in trend analysis.
+
+* Assumption 3: Approximately 3% of records contained nonsensical values (such as negative quantities or future dates). These were excluded from the analysis to prevent distortion of key metrics like Average Order Value.
+
+* Assumption 4: Entries labeled as "Not Noted" or "Unknown" in Location and Payment Method were retained as their own category rather than removed, allowing the visibility gap itself to be measured as an operational metric.
