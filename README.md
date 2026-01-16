@@ -27,7 +27,12 @@ Contains order-level details such as items sold, quantity, price per unit, total
 Supporting Structure:
 A separate menu reference is used, containing item names along with their price per unit values to validate pricing consistency across transactions.
 
-[Entity Relationship Diagram here]
+<img width="860" height="478" alt="dataset structure" src="https://github.com/user-attachments/assets/b98b7802-ce76-4908-8afe-4bbbb21ad37f" />
+
+
+<img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/428fd2a0-136c-4603-8588-bcd4c98f3a50" />
+
+
 
 ---
 
@@ -41,7 +46,8 @@ If a stakeholder were to take away three key insights from this project, they wo
 2. The business’s financial performance is highly driven by a small group of high-performing products (Salads, Sandwiches, and Smoothies contribute 51% of total revenue).
 3. The cafe demonstrates strong operational resilience across channels (In-store vs Takeaway) and consistent performance across days, but clear seasonal peaks and troughs require strategic planning.
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+<img width="856" height="313" alt="category - 1" src="https://github.com/user-attachments/assets/4e60bcbb-9f0d-4d83-9caf-6891f097f1b1" />
+
 
 ---
 
