@@ -27,9 +27,10 @@ Contains order-level details such as items sold, quantity, price per unit, total
 Supporting Structure:
 A separate menu reference is used, containing item names along with their price per unit values to validate pricing consistency across transactions.
 
+##
 <img width="860" height="478" alt="dataset structure" src="https://github.com/user-attachments/assets/b98b7802-ce76-4908-8afe-4bbbb21ad37f" />
 
-
+##
 <img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/428fd2a0-136c-4603-8588-bcd4c98f3a50" />
 
 
