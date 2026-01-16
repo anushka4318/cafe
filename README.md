@@ -97,7 +97,7 @@ Main insight 4: These operational blind spots do not just affect reporting quali
 
 <img width="583" height="200" alt="operation challege 1" src="https://github.com/user-attachments/assets/e648a158-0050-4341-8f4b-59c471cee943" />
 
-
+<img width="928" height="266" alt="cat 2 lost revenue" src="https://github.com/user-attachments/assets/0a15c56f-e49b-4ba7-a486-d23c73f9b9a5" />
 
 ---
 
