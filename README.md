@@ -1,5 +1,9 @@
 # Cafe Data Analysis and Business Strategy
 
+##
+<img width="377" height="267" alt="cfe" src="https://github.com/user-attachments/assets/0bf5d40d-42ee-4b02-83f0-6ae9c0ff6354" />
+
+
 ## Project Background
 
 Cafes have always interested me not only as social spaces but as fast-moving businesses where small operational gaps can quietly impact revenue. This project is based on a dataset sourced from Kaggle and adapted to simulate a realistic cafe business environment. I approached this project from the perspective of a data analyst working within the company, treating the dataset as if it were real operational data.
@@ -111,7 +115,9 @@ Main insight 3: February and May are clear trough periods, with revenue contribu
 
 Main insight 4: Product performance during peak months further reinforces that Salads, Sandwiches, and Smoothies have the strongest product-market fit during key seasonal transitions.
 
-[Visualization specific to category 4]
+*<img width="598" height="256" alt="day wise" src="https://github.com/user-attachments/assets/b925f86c-9302-46ef-82d6-65a1a3bea1e3" />
+
+<img width="447" height="176" alt="month wise" src="https://github.com/user-attachments/assets/ce1087fb-8a06-4221-835f-f58744e36bdd" />
 
 ---
 
@@ -123,9 +129,18 @@ Based on the insights and findings above, we would recommend the leadership and 
 
 * Revenue drops sharply in February and May. Introduce seasonal campaigns such as winter beverage bundles in February and summer-focused smoothie promotions in May to stabilize cash flow.
 
+* <img width="403" height="208" alt="drinks" src="https://github.com/user-attachments/assets/ef16f2ec-6efd-48f9-be31-aa82834d98c3" />
+
+
 * Salads are the strongest product across both revenue and demand. Introduce 1–2 seasonal salad variations to deepen engagement with existing loyal customers and prevent menu fatigue.
 
+*<img width="411" height="261" alt="salas" src="https://github.com/user-attachments/assets/da357daf-8d67-4dbf-97ae-48d78e56f3dc" />
+
+
 * The top three revenue drivers (Salads, Sandwiches, Smoothies) can be strategically bundled. Introduce a high-value combo offering to increase average transaction size while simplifying customer decision-making.
+
+*<img width="437" height="237" alt="combo" src="https://github.com/user-attachments/assets/c7e261bc-2756-4307-baf0-232bbbddd907" />
+
 
 * Cookies are a high-volume, low-cost item. Use them as an incentive (e.g., free cookie with premium combo purchases) to psychologically boost perceived value while driving sales of high-margin items.
 
