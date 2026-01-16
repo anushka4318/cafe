@@ -46,6 +46,8 @@ The main database structure as seen below consists of 1 main table with a total 
 This is the menu table along with its price per unit value adjacent to the item name.
 
 <img width="146" height="217" alt="menu" src="https://github.com/user-attachments/assets/9f2f0255-b4c1-44c2-93b9-0d39a73eeb21" />
+
+
 Insight Deep Dive
 
 Total Market Capture:
