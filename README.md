@@ -13,10 +13,6 @@ Insights and recommendations are provided on the following key areas:
 * Category 3: Channel & Operational Performance
 * Category 4: Time-Based Trends & Growth
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
-
-Targeted SQL queries regarding various business questions can be found here [link].
-
 An interactive Excel dashboard used to report and explore sales trends can be found here [link].
 
 ---
