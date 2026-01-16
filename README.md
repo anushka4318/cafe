@@ -64,7 +64,8 @@ Main insight 3: From a volume perspective, Coffee, Salads, and Cookies are the t
 
 Main insight 4: Salads emerge as the strongest overall product, ranking highest in both revenue and volume, with an Average Order Value (AOV) of $15. This reflects strong product-market fit and high-margin contribution.
 
-[Visualization specific to category 1]
+<img width="675" height="440" alt="cat- 1" src="https://github.com/user-attachments/assets/4af7734d-0ec6-4458-9e9f-cf7233bb5c8b" />
+
 
 ---
 
@@ -78,7 +79,8 @@ Main insight 3: The high volume of unspecified customer and transaction entries 
 
 Main insight 4: The balanced split between channels provides strategic resilience, meaning the business is not overly dependent on a single revenue stream.
 
-[Visualization specific to category 2]
+<img width="835" height="145" alt="cat 2 better" src="https://github.com/user-attachments/assets/a057f6f6-8b23-4147-96ec-13fbb91f696f" />
+
 
 ---
 
@@ -92,7 +94,10 @@ Main insight 3: A large number of transactions are missing location and payment 
 
 Main insight 4: These operational blind spots do not just affect reporting quality; they directly limit the business’s ability to make informed decisions around staffing, layout, marketing, and investment.
 
-[Visualization specific to category 3]
+
+<img width="583" height="200" alt="operation challege 1" src="https://github.com/user-attachments/assets/e648a158-0050-4341-8f4b-59c471cee943" />
+
+
 
 ---
 
